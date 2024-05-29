@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Envases flexibles</title>
+</head>
+<body>
+
+    <div class="head">
+
+        <div class="logo">
+            <img src="css/logo.jpeg" alt="Envases Flexibles QP">
+        </div>
+
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Productos</a>
+            <a href="#">Sucursales</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        
+        <div class="btn-home">
+            <a href="#" class="btn">Saber mas</a>
+            <a href="#" class="btn">Saber mas</a>
+        </div>
+    </header>
+
+    <section class="content sau">
+
+        <h2 class="title">Servicios</h2>
+        <p>Brindamos a nuestros clientes, envases con tecnologia avanzada y materia prima de calidad.
+            <br>21 años en Bolivia sirviendo a la industria alimenticia.
+        </p>
+        
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fab fa-angular"></i>
+                <h3>Bolsas</h3>
+                <p>Bolsa tipo camiseta en polietileno de baja densidad.</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                <h3>Impresiones</h3>
+                <p>Impresiones en BOPP.
+                    Impresiones hasta en 8 colores
+                </p>
+            </div>
+            <div class="box">
+                <i class="fab fa-android"></i>
+                <h3>Envases</h3>
+                <p>Agrofilm
+                    <br>Envases resistentes
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="content about">
+        <br><br>
+        <h2 class="title">Nosotros</h2>
+        <p class="two">
+            Mision
+            <br>Ser la empresa lider en soluciones de envases flexibles innovadoras y sostenibles para la industria alimentaria y de bienes generales, comprometida
+            con la satisfaccion del cliente y la exelencia operativa.
+            <br>Vision
+            <br>Ser lideres en innovacion, diseño y fabricacion de envases flexibles, proporcionando soluciones sostenibles y adaptadas a las necesidades cambiantes del mercado globar.
+        </p>
+
+        <a href="#" class="btn">Saber mas</a>
+
+    </section>
+
+    <section class="content price">
+<br><br><br>
+        <article class="contain">
+            <h2 class="title">Sucursales</h2>
+            <p>Estamos ubicados en El Altos, calle Mariano Moreno Nro. 200 Camino a senkata.
+            </p>
+
+            <a href="https://maps.app.goo.gl/4vaTMdoXaAnPbaaMA" class="btn">Ver Sucursal</a>
+
+        </article>
+
+    </section>
+<br><br><br>
+    <section class="content contact">
+        <h2 class="title">Contacto</h2>
+        <p>Teléfono: 285 0344 - (591) 752 20011  
+            <br>E-mail: adria_flex@hotmail.com</p>
+        <figure class="map">
+            <img src="#" height="220px" width="100%" alt="mapa">
+        </figure>
+    </section>
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            Chatbot
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chatbot-message">¡Hola! ¿En qué puedo ayudarte?</div>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" class="chatbot-input" id="user-input" placeholder="Escribe tu mensaje...">
+            <button class="chatbot-send-btn" onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById('user-input').value;
+            var chatbotMessages = document.getElementById('chatbot-messages');
+
+            // Agrega el mensaje del usuario al chat
+            var userMessage = document.createElement('div');
+            userMessage.classList.add('user-message');
+            userMessage.textContent = userInput;
+            chatbotMessages.appendChild(userMessage);
+
+            // Simula una respuesta del chatbot (puedes personalizar esta parte)
+            var chatbotReply = document.createElement('div');
+            chatbotReply.classList.add('chatbot-message');
+            chatbotReply.textContent = 'Lo siento, todavía estoy aprendiendo. ¿Puedo ayudarte con algo más?';
+            chatbotMessages.appendChild(chatbotReply);
+
+            // Limpia el campo de entrada
+            document.getElementById('user-input').value = '';
+
+            // Desplaza la ventana de chat al último mensaje
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }
+    </script>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
